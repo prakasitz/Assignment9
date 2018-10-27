@@ -3,12 +3,6 @@
 --
 ### ไฟล์ที่แก้ทั้งหมด
 ไฟล์ .xml
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-
 
  ชื่อ  | path 
  ------ | ------ 
@@ -17,7 +11,9 @@ Content in the first column | Content in the second column
  activity_main.xml | [res/layout/activity_main.xml][PlOd] 
  activity_search_contact.xml | [res/layout/activity_search_contact.xml][PlMe] 
   contact_item.xml | [res/layout/contact_item.xml][PlGa] 
+  
 ไฟล์ .java
+
 | ชื่อ  |path |
 | ------ | ------ |
 | AddContactActivity.java | [week9/activity/AddContactActivity.java][ja] |
