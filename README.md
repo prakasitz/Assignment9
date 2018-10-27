@@ -2,14 +2,14 @@
 ![alt text](https://github.com/prakasitz/Assignment9/blob/master/main.png "main")
 --
 ### ไฟล์ที่แก้ทั้งหมด
-
+ไฟล์ .xml
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
 
-ไฟล์ .xml
+
  ชื่อ  | path 
  ------ | ------ 
  activity_add_contact.xml | [res/layout/activity_add_contact.xml][PlDb] 
