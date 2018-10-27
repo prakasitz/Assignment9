@@ -10,7 +10,7 @@ import com.mydomain.app.week9.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnListContact, btnSearchContact, btnAddContact;
+    private Button btnListEmployee, btnSearchEmployee, btnAddEmployee;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,26 +19,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void init() {
-        btnListContact = (Button) findViewById(R.id.btnListContact);
-        btnListContact.setOnClickListener(this);
+        btnListEmployee = (Button) findViewById(R.id.btnListEmployee);
+        btnListEmployee.setOnClickListener(this);
 
-        btnSearchContact = (Button) findViewById(R.id.btnSearchContact);
-        btnSearchContact.setOnClickListener(this);
+        btnSearchEmployee = (Button) findViewById(R.id.btnSearchEmployee);
+        btnSearchEmployee.setOnClickListener(this);
 
-        btnAddContact = (Button) findViewById(R.id.btnAddContact);
-        btnAddContact.setOnClickListener(this);
+        btnAddEmployee = (Button) findViewById(R.id.btnAddEmployees);
+        btnAddEmployee.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         Intent i = null;
-        if(v == btnListContact){
+        if(v == btnListEmployee){
             i = new Intent(this, ListContactActivity.class);
         }
-        else if(v == btnSearchContact){
+        else if(v == btnSearchEmployee){
             i = new Intent(this, SearchContactActivity.class);
         }
-        else if(v == btnAddContact){
+        else if(v == btnAddEmployee){
             i = new Intent(this, AddContactActivity.class);
         }
         startActivity(i);

@@ -13,8 +13,8 @@ import com.mydomain.app.week9.util.DBHelper;
 public class AddContactActivity extends AppCompatActivity implements View.OnClickListener {
 
     private DBHelper dbHelper;
-    private EditText etAddName, etAddEmail, etAddPhone;
-    private Button btnAddContact;
+    private EditText etAddName, etAddAge, etAddSalary;
+    private Button btnAddEmploy;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,18 +23,18 @@ public class AddContactActivity extends AppCompatActivity implements View.OnClic
         dbHelper = new DBHelper(this);
 
         etAddName = (EditText) findViewById(R.id.etAddName);
-        etAddEmail = (EditText) findViewById(R.id.etAddEmail);
-        etAddPhone = (EditText) findViewById(R.id.etAddPhone);
+        etAddAge = (EditText) findViewById(R.id.etAddAge);
+        etAddSalary = (EditText) findViewById(R.id.etAddSalary);
 
-        btnAddContact = (Button) findViewById(R.id.btnAddContact);
-        btnAddContact.setOnClickListener(this);
+        btnAddEmploy = (Button) findViewById(R.id.btnAddEmployee);
+        btnAddEmploy.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         String name = etAddName.getText().toString();
-        int age = Integer.parseInt(etAddEmail.getText().toString());
-        double salary = Double.valueOf(etAddPhone.getText().toString());
+        int age = Integer.parseInt(etAddAge.getText().toString());
+        double salary = Double.valueOf(etAddSalary.getText().toString());
         if ("".equals(name) || name.length() == 0){
             Toast.makeText(this, "Cannot add - Contact name is empty!", Toast.LENGTH_SHORT).show();
             return;

@@ -19,26 +19,26 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/etAddEmail"
+        android:id="@+id/etAddAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="Age"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/etAddPhone"
+        android:id="@+id/etAddSalary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone"
+        android:hint="Salary"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btnAddContact"
+        android:id="@+id/btnAddEmployee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Contact"
+        android:text="Add Employee"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 </LinearLayout>

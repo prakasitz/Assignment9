@@ -105,9 +105,9 @@ public class DBHelper extends SQLiteOpenHelper{
     public void updateContact(Contact contact){
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL(
-                "UPDATE EMPLOYEES SET NAME = '" + contact.getName() + "', " +
-                        "AGE = " + contact.getEmail() + ", " +
-                        "SALARY = " + contact.getPhone() + ", " +
+                "UPDATE EMPLOYEES SET NAME = '" + contact.getName() + "'," +
+                         "AGE = " + contact.getEmail() + ", " +
+                        "SALARY = " + contact.getPhone() + " " +
                         "WHERE _ID = " + contact.getId()
         );
         db.close();

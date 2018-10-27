@@ -18,7 +18,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
 
     private TextView tvId;
     private EditText etName, etAge, etSalary;
-    private Button btnUpdateContact, btnDeleteContact;
+    private Button btnUpdateEmployee, btnDeleteEmployee;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,20 +31,20 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
 
         tvId = (TextView) findViewById(R.id.tvId);
         etName = (EditText) findViewById(R.id.etName);
-        etAge = (EditText) findViewById(R.id.etEmail);
-        etSalary = (EditText) findViewById(R.id.etPhone);
+        etAge = (EditText) findViewById(R.id.etAge);
+        etSalary = (EditText) findViewById(R.id.etSalary);
 
         if (contact != null){
             tvId.setText("ID: " + contact.getId());
             etName.setText(contact.getName());
-            etAge.setText(contact.getEmail());
-            etSalary.setText((int) contact.getPhone());
+            etAge.setText(String.valueOf(contact.getEmail()));
+            etSalary.setText(String.valueOf(contact.getPhone()));
         }
 
-        btnUpdateContact = (Button) findViewById(R.id.btnUpdateContact);
-        btnDeleteContact = (Button) findViewById(R.id.btnDeleteContact);
-        btnUpdateContact.setOnClickListener(this);
-        btnDeleteContact.setOnClickListener(this);
+        btnUpdateEmployee = (Button) findViewById(R.id.btnUpdateEmployee);
+        btnDeleteEmployee = (Button) findViewById(R.id.btnDeleteEmployee);
+        btnUpdateEmployee.setOnClickListener(this);
+        btnDeleteEmployee.setOnClickListener(this);
     }
 
     private Contact getContactFromId(int contactId){
@@ -56,22 +56,22 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         if (contact  == null){
             return;
         }
-        if (v == btnUpdateContact){
+        if (v == btnUpdateEmployee){
             contact.setName(etName.getText().toString());
             contact.setEmail(Integer.parseInt(etAge.getText().toString()));
             contact.setPhone(Double.valueOf(etSalary.getText().toString()));
 
             dbHelper.updateContact(contact);
 
-            Toast.makeText(this, "Contact updated!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Employee updated!", Toast.LENGTH_SHORT).show();
             finish();
         }
-        else if (v == btnDeleteContact){
+        else if (v == btnDeleteEmployee){
             dbHelper.deleteContact(contact.getId());
 
             contact = null;
 
-            Toast.makeText(this, "Contact deleted!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Employee deleted!", Toast.LENGTH_SHORT).show();
             finish();
         }
     }

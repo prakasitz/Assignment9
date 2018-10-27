@@ -26,32 +26,32 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/etPhone"
+        android:id="@+id/etSalary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btnUpdateContact"
+        android:id="@+id/btnUpdateEmployee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update Contact"
+        android:text="Update Employee"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btnDeleteContact"
+        android:id="@+id/btnDeleteEmployee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete Contact"
+        android:text="Delete Employee"
         android:layout_margin="5dp"
         android:textSize="20sp"/>
 </LinearLayout>
