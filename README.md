@@ -1,15 +1,15 @@
 # Assignment9 การใช้ SQL กับ Andriod
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 ![alt text](https://github.com/prakasitz/Assignment9/blob/master/main.png "main")
+--
 ### ไฟล์ที่แก้ทั้งหมด
 ไฟล์ .xml
-| ชื่อ  |path |
-| ------ | ------ |
-| activity_add_contact.xml | [res/layout/activity_add_contact.xml][PlDb] |
-| activity_detail.xml | [res/layout/activity_detail.xml][PlGh] |
-| activity_main.xml | [res/layout/activity_main.xml][PlOd] |
-| activity_search_contact.xml | [res/layout/activity_search_contact.xml][PlMe] |
-| contact_item.xml | [res/layout/contact_item.xml][PlGa] |
+ ชื่อ  | path 
+ ------ | ------ 
+ activity_add_contact.xml | [res/layout/activity_add_contact.xml][PlDb] 
+ activity_detail.xml | [res/layout/activity_detail.xml][PlGh] 
+ activity_main.xml | [res/layout/activity_main.xml][PlOd] 
+ activity_search_contact.xml | [res/layout/activity_search_contact.xml][PlMe] 
+  contact_item.xml | [res/layout/contact_item.xml][PlGa] 
 ไฟล์ .java
 | ชื่อ  |path |
 | ------ | ------ |
